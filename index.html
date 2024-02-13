@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Using Form - Assignment 1</title>
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Calculator container -->
+  <div class="calculator">
+
+    <!-- Calculator by using form as per the assignment requiremnts-->
+    <form id="calculatorForm" onsubmit="event.preventDefault();" action="#">
+      <h2>Calculator Form:</h2>
+       <!-- Operand 1 input field -->
+    <input type="number" step="any" id="operand1" placeholder="Operand 1">
+      <!-- Operator select dropdown -->
+    <select id="operator">
+        <option value="">operator</option>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="x">x</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+      <option value="^">^</option>
+    </select>
+     <!-- Operand 2 input field -->
+    <input type="number" id="operand2" placeholder="Operand 2">
+       <!-- Result button -->
+    <button  id="result-btn">Result</button>
+     <!-- Clear button -->
+    <button  id="clear-btn">Clear</button>
+     <!-- Clear history button -->
+    <button id="clear-history-btn">Clear History</button>
+    <!-- Show history button -->
+    <button  id="history-btn">History</button>
+ 
+    <!-- Expression display -->
+    <div id="expression">Expression:</div>
+     <!-- Result display -->
+    <div id="result">Result:</div>
+    <!-- History display -->
+   <div id="history"></div>
+  </form>
+  </div>
+ <!-- External JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+/* Setting background gradient */
+body{
+  background-image: linear-gradient(to right, rgb(247, 246, 246) , rgb(165, 136, 210), rgb(114, 115, 117));
+  padding-top:5%;
+}
+
+/* Styling for the calculator container */
+.calculator {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #bbbaba;
+    border-radius: 10px;
+    background-color: #e9f8d2
+  }
+  
+  /* Styling for input fields, select dropdown, and buttons */
+  input[type="number"], select, button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #bbbaba;
+    border-radius: 5px;
+    width: 100px; /* Equal size for input boxes */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  /* Styling for the operator select dropdown */
+#operator {
+  font-size: 15px;
+}
+
+/* Styling for buttons */
+  button {
+    cursor: pointer;
+    background-color: #1280ca;
+    color: white;
+    font-size: 14px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  button:hover {
+    background-color: #0e42b1;
+    transform: scale(1.05);
+  }
+  
+  #expression, #result {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #bbbaba;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #fff;
+  }
+  button:active{
+    background-color: red;
+  }
+  
+  /* Styling for result button */
+  #result-btn{
+    background-color: rgb(11, 167, 11);
+  }
+  #result-btn:hover{
+    background-color: green;
+   
+  }
+
+  /* Styling for clear button */
+  #clear-btn{
+    background-color: rgb(243, 65, 65);
+   
+  }
+  #clear-btn:hover{
+    background-color: rgb(199, 31, 31);
+  
+  }
+
+  /* Styling for history button */
+  #history-btn{
+    display: block;
+  margin: 0 auto; 
+ width:70%;
+  }
+
+
+  /* Styling for history display */
+  #history{
+    visibility:none;
+    margin:8px 0px 0px;
+    padding-top:8px;
+    padding-left:6px;
+    background-color:white;
+    border:1px solid #bbbaba;
+    border-radius:5px;
+  }
